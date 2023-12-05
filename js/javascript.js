@@ -1,5 +1,16 @@
 // Dylan Silk - dylan_silk@student.uml.edu - 12/4/23
 
+/*
+    USEFUL LINKS / DOCUMENTATION
+        - https://www.jsdelivr.com/
+        - https://jqueryvalidation.org/documentation/
+        - https://jqueryvalidation.org/validate/
+        - https://jqueryvalidation.org/required-method/
+        - https://jqueryvalidation.org/number-method/
+        - https://jqueryvalidation.org/min-method/
+        - https://jqueryvalidation.org/max-method/
+*/
+
 // Input validation handled by JQUERY
 $(document).ready(function() { 
     $("#dynamicTableForm").validate({
@@ -26,8 +37,7 @@ $(document).ready(function() {
             maxRow: {
                 required: true,
                 number: true,
-                min: -50,
-                max: 50,
+                range: [-50, 50],
             },
         },
         // error messages that go with the input validation
