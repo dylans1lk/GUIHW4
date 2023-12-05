@@ -1,0 +1,44 @@
+<!-- Dylan Silk - dylan_silk@student.uml.edu - 12/4/233 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw3</title>
+    <link rel="stylesheet" href="./css/style.css"> <!-- CSS STYLE -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.20.0/dist/jquery.validate.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <!--<script src="https://code.jquery.com/jquery-3.6.4.js"></script> <!-- JQUERY 
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script> <!-- JQUERY VALIDATION 
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script> <!-- ADDITIONAL JQUERY STUFF -->
+    <script src="./js/javascript.js"></script> <!-- JAVASCRIPT -->
+</head>
+
+<body>
+    <div class="borderedDiv">
+        <h1> Please enter the table ranges:</h1>
+
+        <form id="dynamicTableForm">
+            <!-- Form that has the numbers -->
+            <label for="minCol">Minimum Column Value:</label>
+            <input type="number" id="minCol" required><br>
+
+            <label for="maxCol">Max Column Value:</label>
+            <input type="number" id="maxCol" required><br>
+
+            <label for="minRow">Minimum Row Value:</label>
+            <input type="number" id="minRow" required><br>
+
+            <label for="maxRow">Max Row Value:</label>
+            <input type="number" id="maxRow" required><br>
+            <!-- Code for submit button -->
+            <button type="button" id="submit">Submit</button>
+        </form>
+    </div>
+    <!-- My table generated after clicking the button gets put into here, or the error message -->
+    <div id="dynamicTable"></div>
+</body>
+</html>
