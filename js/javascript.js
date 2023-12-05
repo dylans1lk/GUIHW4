@@ -35,8 +35,8 @@ $(document).ready(function() {
             minCol: {
                 required: "Minimum Column's required to fill out. Enter a number -50 to 50.",
                 number: "Minimum Column's required to be a number. Enter a number -50 - 50.",
-                min: "Minimum Column's range is exceeded. Enter a number -50 - 50.",
-                max: "Minimum Column's range is exceeded. Enter a number -50 - 50.",
+                min: "Minimum Column's range is exceeded. Enter a number -50 - 50.", // doesn't work on any of the max/mins ???
+                max: "Minimum Column's range is exceeded. Enter a number -50 - 50.", // doesn't work on any of the max/mins ???
             },
             maxCol: {
                 required: "Maximum Columns's required to fill out. Enter a number -50 to 50.",
@@ -53,7 +53,7 @@ $(document).ready(function() {
             maxRow: {
                 required: "Maximum Row's required to fill out. Enter a number -50 to 50.",
                 number: "Maximum Row's required to be a number. Enter a number -50 - 50.",
-                range: "Maximum Row's range is exceeded. Enter a number -50 - 50.",
+                range: "Maximum Row's range is exceeded. Enter a number -50 - 50.", // this also doesn't work ???
             },
         },
 
